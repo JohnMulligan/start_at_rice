@@ -100,9 +100,7 @@ These are listed in requirements.txt
 
 	pip3 install -r requirements.txt
 
-4. You're good to go! Try running an app.
-
-	python app.py
+4. You're good to go!
 
 ## Running the applications in this repo
 
@@ -112,19 +110,24 @@ There are two apps in this repo. Each can be run simply by invoking the file in 
 	
 	python scatter.py
 	
-	python application.py
+	python basic_application.py
+	
+	python complex_application.py
 	
 
 ### What do the apps do?
 
-1. scatter.py: this application shows
+1. scatter.py: this simple graph shows
 	1. For the weeks since January 1, 2020:
 	1. The number of people who
 		1. were expected to die in Texas, week by week
 		1. actually died in excess of that number
 	1. These numbers are stacked up to show the excess mortality
 	1. For weeks where the death rate was exceptionally high (above the 95% CI upper bound as determined by a Farrington outbreak detection algorithm), an "x" has been tagged to the top of the week
-1. application.py: this application shows
+1. basic_application.py: this application adds interactivity to the basic graph
+	1. allows you to choose a single state
+	1. allows you to toggle between mortality with and without COVID
+1. complex_application.py: this application shows
 	1. for the weeks since January 1, 2020:
 	1. A multi-select geographic heatmap ("choropleth")
 		1. of the United States
